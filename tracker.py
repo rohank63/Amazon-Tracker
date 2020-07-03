@@ -5,7 +5,7 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk
 
-headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36'}
+headers = {"User-Agent": 'ADD YOUR USER AGENT'}
 
 
 def check_price():
@@ -47,8 +47,8 @@ def send_mail(URL):
     server.starttls()
     server.ehlo()
 
-    server.login('rohankandhari63@gmail.com', 'ggizaspgajjyiyip')
-    subject = "Price Fell Down"
+    server.login('rohankandhari63@gmail.com', 'YOUR APP CODE')
+    subject = "Price Crashed"
     body = "Check amazon link"
     message = f"Subject: {subject}\n\n{body}\n\n{URL}"
     server.sendmail(
